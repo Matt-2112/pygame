@@ -16,7 +16,7 @@ text_surface = test_font.render('My game', False, 'Black')
 snail_surface = pygame.image.load('graphics/snail1.png').convert_alpha()
 snail_rectangle = snail_surface.get_rect(midbottom = (850, 300))
 
-player_surface = pygame.image.load('graphics/player_walk_1.png').convert_alpha()
+player_surface = pygame.image.load('graphics/wizard_right.png').convert_alpha()
 player_rectangle = player_surface.get_rect(midbottom = (80, 300))
 
 while True:
@@ -36,7 +36,7 @@ while True:
     if player_rectangle.colliderect(snail_rectangle):
         print('collision')
 
-    
+
 
     pygame.display.update()
     clock.tick(60)
